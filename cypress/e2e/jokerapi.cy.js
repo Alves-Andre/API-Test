@@ -21,7 +21,7 @@ describe('Validando atributos da API', () => {
     let typeList = []
     let setupList = []
     let punchlineList = []
-    for (Range = 0; Range < 5; Range++) {
+    for (Range = 0; Range < 100; Range++) {
     
       cy.request(endpoint).then((response) => {
       expect(idList).not.to.include(response.body.id)
